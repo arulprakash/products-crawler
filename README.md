@@ -1,36 +1,11 @@
-# amazon
+# amazon products fetcher
 
-FIXME: description
-
+Retrieves information of products listed in amazon given a list of categories. Fetches the product page and parses it and gives title, price, url, best sellers rank, review score and ASIN. Can run concurrently and tested with 200 threads in a MBP. Also supports proxies and stores product information in postgres.
 ## Installation
-
-Download from http://example.com/FIXME.
 
 ## Usage
 
-FIXME: explanation
+Setup a postgres database and mention the settings in db.clj
+Buy a list of proxies and mention them in getters.clj
+Thread count is managed in core.clj; Adjust it according to the machine's capabilities.
 
-    $ java -jar amazon-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
