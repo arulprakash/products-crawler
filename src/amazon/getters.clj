@@ -23,31 +23,8 @@
 (def user-agent {"http.useragent" "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.20 (KHTML, like Gecko) Chrome/11.0.672.2 Safari/534.20"})
 
 (def proxies
-  ["173.208.43.24"
-   "173.208.103.232"
-   "173.232.20.54"
-   "94.229.71.58"
-   "192.126.162.207"
-   "173.208.43.114"
-   "173.234.57.77"
-   "173.234.57.206"
-   "94.229.71.90"
-   "173.208.43.22"
-   "94.229.71.107"
-   "173.234.57.33"
-   "173.232.20.225"
-   "173.232.20.2"
-   "173.208.103.157"
-   "94.229.71.12"
-   "173.232.20.244"
-   "173.208.103.138"
-   "173.208.43.156"
-   "192.126.162.131"
-   "192.126.162.98"
-   "173.234.57.94"
-   "192.126.162.44"
-   "173.208.103.166"
-   "173.208.103.118"])
+  [;list proxies here
+   ])
 (def direct-proxy {:proxy-host (rand-nth proxies) :proxy-port 3128})
 (def socks-proxy {:connection-manager
                   (conn-mgr/make-socks-proxied-conn-manager (rand-nth proxies) 3128)})
